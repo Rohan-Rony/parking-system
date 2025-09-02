@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parking Lot Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚗 Parking Lot Management System</h1>
+
+  <!-- Staff -->
+  <section>
+    <h2>Staff</h2>
+    <form id="staffForm">
+      <input type="text" id="staffnumber" placeholder="Staff Number" required>
+      <input type="text" id="staffname" placeholder="Staff Name" required>
+      <input type="text" id="phoneno" placeholder="Phone Number" required>
+      <input type="text" id="lotnumber" placeholder="Lot Number">
+      <button type="submit">Add Staff</button>
+    </form>
+    <table id="staffTable">
+      <thead>
+        <tr>
+          <th>Staff Number</th>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Lot</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Parking Lot -->
+  <section>
+    <h2>Parking Lots</h2>
+    <form id="parkinglotForm">
+      <input type="text" id="lotnumberLot" placeholder="Lot Number" required>
+      <input type="number" id="numberofslots" placeholder="Number of Slots" required>
+      <input type="text" id="staffnumberLot" placeholder="Staff Number" required>
+      <button type="submit">Add Lot</button>
+    </form>
+    <table id="parkinglotTable">
+      <thead>
+        <tr>
+          <th>Lot Number</th>
+          <th>Slots</th>
+          <th>Staff</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Parking Slots -->
+  <section>
+    <h2>Parking Slots</h2>
+    <form id="parkingslotForm">
+      <input type="text" id="slotnumber" placeholder="Slot Number" required>
+      <input type="text" id="lotnumberSlot" placeholder="Lot Number" required>
+      <button type="submit">Add Slot</button>
+    </form>
+    <table id="parkingslotTable">
+      <thead>
+        <tr>
+          <th>Slot Number</th>
+          <th>Lot Number</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Vehicles -->
+  <section>
+    <h2>Vehicles</h2>
+    <form id="vehicleForm">
+      <input type="text" id="vehiclenumber" placeholder="Vehicle Number" required>
+      <input type="text" id="customername" placeholder="Customer Name" required>
+      <input type="text" id="vehiclename" placeholder="Vehicle Name" required>
+      <button type="submit">Add Vehicle</button>
+    </form>
+    <table id="vehicleTable">
+      <thead>
+        <tr>
+          <th>Vehicle Number</th>
+          <th>Customer</th>
+          <th>Vehicle Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Allocation -->
+  <section>
+    <h2>Allocation</h2>
+    <form id="allocationForm">
+      <input type="text" id="vehiclenumberAlloc" placeholder="Vehicle Number" required>
+      <input type="text" id="slotnumberAlloc" placeholder="Slot Number" required>
+      <input type="datetime-local" id="checkintime" required>
+      <input type="datetime-local" id="checkouttime">
+      <button type="submit">Allocate</button>
+    </form>
+    <table id="allocationTable">
+      <thead>
+        <tr>
+          <th>Vehicle Number</th>
+          <th>Slot Number</th>
+          <th>Check-in</th>
+          <th>Check-out</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
